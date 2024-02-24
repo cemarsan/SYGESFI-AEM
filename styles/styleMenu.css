@@ -1,0 +1,72 @@
+nav {
+    float: right;
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul {
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 0 20px;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    margin-right: -80px;
+    border-radius: 6px;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li:hover {
+    border-bottom: 5px solid #A9A9A9;
+    color: #fff;
+
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 15px;
+    font-family: 'PT Sans', sans-serif;
+    color: #000;
+    text-decoration: none;
+}
+
+nav ul ul {
+    background-color: #fff;
+    border-radius: 0px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);
+}
+
+nav ul ul li {
+    float: none;
+    position: relative;
+}
+
+nav ul ul li a {
+    padding: 15px 40px;
+    color: #000;
+}
+
+nav ul ul:before {
+    content: "";
+    display: block;
+    height: 20px;
+    position: absolute;
+    top: -20px;
+    width: 100%;
+}
